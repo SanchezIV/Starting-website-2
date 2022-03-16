@@ -4287,7 +4287,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4401,7 +4401,7 @@ tbody.collapse.in {
     font-size: 12px;
     line-height: 1.42857143;
     color: #777;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .dropdown-backdrop {
@@ -4410,12 +4410,12 @@ tbody.collapse.in {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 990
+    z-index: 990;
 }
 
 .pull-right>.dropdown-menu {
     right: 0;
-    left: auto
+    left: auto;
 }
 
 .dropup .caret,
@@ -4423,24 +4423,24 @@ tbody.collapse.in {
     content: "";
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px solid;
 }
 
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 @media (min-width:768px) {
     .navbar-right .dropdown-menu {
         right: 0;
-        left: auto
+        left: auto;
     }
     .navbar-right .dropdown-menu-left {
         right: auto;
-        left: 0
+        left: 0;
     }
 }
 
@@ -4448,13 +4448,13 @@ tbody.collapse.in {
 .btn-group-vertical {
     position: relative;
     display: inline-block;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .btn-group-vertical>.btn,
 .btn-group>.btn {
     position: relative;
-    float: left
+    float: left;
 }
 
 .btn-group-vertical>.btn.active,
