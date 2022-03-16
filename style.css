@@ -90,6 +90,11 @@ a:hover {
     right: 0;
 }
 
+.texture-paper::before {
+    background: url("img/texture-paper.png");
+    background-size: 280px 280px;
+}
+
 .b-parallax {
     background-attachment: fixed;
 }
@@ -280,7 +285,6 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
-    text-shadow: 2px 3px 7px black;
 }
 
 .navbar {
@@ -298,7 +302,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    height: 40px;
+    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -673,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -749,7 +753,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 1);
+    background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -772,7 +776,6 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
-    text-shadow: 2px 5px 7px black;
 }
 
 .btn-atomic-tangerine {
@@ -845,13 +848,13 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -870,8 +873,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -881,6 +884,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
