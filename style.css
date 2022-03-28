@@ -89,6 +89,10 @@ a:hover {
     left: 0;
     right: 0;
 }
+.image-resize-mode {
+    width: 40px;
+    height: 40px;
+}
 
 .texture-paper::before {
     background: url("img/texture-paper.webp");
